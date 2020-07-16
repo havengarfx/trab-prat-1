@@ -26,8 +26,12 @@ function start() {
     ")";
   console.log(rgb);
 
+  var rgb1 = `rgb(${rangeReadRed.value},${rangeReadGreen.value},${rangeReadBlue.value})`;
+
+  console.log(rgb1);
+
   var squareBackcolor = document.querySelector("#divsquare");
-  squareBackcolor.style.background = rgb;
+  squareBackcolor.style.background = rgb1;
 
   rangeRed.addEventListener("input", changeRange);
   rangeGreen.addEventListener("input", changeRange);
